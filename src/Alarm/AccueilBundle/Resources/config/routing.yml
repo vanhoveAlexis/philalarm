@@ -1,0 +1,3 @@
+alarm_accueil_homepage:
+    path:     /Accueil
+    defaults: { _controller: AlarmAccueilBundle:Default:index }

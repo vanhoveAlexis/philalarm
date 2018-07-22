@@ -1,0 +1,4 @@
+services:
+#    alarm_accueil.example:
+#        class: Alarm\AccueilBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

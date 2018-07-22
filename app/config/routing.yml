@@ -1,0 +1,7 @@
+alarm_accueil:
+    resource: "@AlarmAccueilBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

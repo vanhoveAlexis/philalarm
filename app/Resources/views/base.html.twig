@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Phil'alarm!{% endblock %}</title>
+        {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/style.css') }}"> 
+            <link rel="stylesheet" href="{{ asset('vendor/fontawesome/css/fontawesome.min.css') }}"> 
+            <link rel="stylesheet" href="{{ asset('vendor/fontawesome/css/all.min.css') }}"> 
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        {% block navbar %}
+            <div class="text-center">
+                <a href='/Accueil'><img src="{{ asset('images/favicon.png') }}"/></a>
+            </div>
+            <div class="container">
+              <nav class="navbar navbar-default" role="navigation">
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse" style="padding-left:0px;">
+                  <ul class="nav navbar-nav navbar-left">
+                    <li><a class="btn btn-default fas fa-home" href="/Accueil"> Accueil</a></li>
+                    <li><a class="btn btn-default btn-margin-left fas fa-question-circle" href="#"> A propos</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="btn btn-default btn-margin-left fas fa-handshake dropdown-toggle" data-toggle="dropdown"> Services<b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Contrat d'entretien</a></li>
+                        <li><a href="#">Depannage Alarme</a></li>
+                        <li><a href="#">Depannage Vidéo</a></li>
+                        <li><a href="#">Depannage Interphone</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="btn btn-default btn-margin-left fas fa-briefcase dropdown-toggle" data-toggle="dropdown"> Produits<b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Alarme Sans fil</a></li>
+                        <li><a href="#">Alarme Filaire</a></li>
+                        <li><a href="#">Videosurveillance</a></li>
+                        <li><a href="#">Interphone</a></li>
+                        <li><a href="#">Générateur de fumée</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                       <li><a class="btn btn-default btn-margin-left fas fa-address-card" href="#"> Contact</a></li>
+                  </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+              </nav>
+            </div>
+
+
+        {% endblock %}
+        {% block body %}
+        {% endblock %}
+        {% block javascripts %}
+            <script
+              src="https://code.jquery.com/jquery-3.3.1.min.js"
+              integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+              crossorigin="anonymous">
+            </script>
+            <script src="{{ asset('vendor/bootstrap/js/bootstrap.min.js') }}"></script>
+            <script src="{{ asset('vendor/fontawesome/js/fontawesome.min.js') }}"></script>
+        {% endblock %}
+    </body>
+</html>
